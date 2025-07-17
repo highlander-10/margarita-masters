@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+#app {
+    max-width: 400px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#user-info {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+main {
+    padding: 1rem;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+.btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin: 0.5rem 0;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+.btn.danger {
+    background: #e74c3c;
+}
+
+.btn.danger:hover {
+    background: #c0392b;
+}
+
+.btn.success {
+    background: #27ae60;
+}
+
+.btn.success:hover {
+    background: #229954;
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.restaurant-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid #3498db;
+}
+
+.restaurant-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.rating-section {
+    margin: 1.5rem 0;
+}
+
+.rating-section h4 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.rating-item {
+    margin: 1rem 0;
+}
+
+.rating-item label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.slider-container {
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+.slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: #ddd;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3498db;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3498db;
+    cursor: pointer;
+    border: none;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+.trivia-card {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.trivia-card h3 {
+    color: #856404;
+    margin-bottom: 1rem;
+}
+
+.trivia-options {
+    margin: 1rem 0;
+}
+
+.trivia-option {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.trivia-option:hover {
+    border-color: #3498db;
+    background: #f8f9fa;
+}
+
+.trivia-option.correct {
+    border-color: #27ae60;
+    background: #d4edda;
+}
+
+.trivia-option.incorrect {
+    border-color: #e74c3c;
+    background: #f8d7da;
+}
+
+.results-card {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.winner-card {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.winner-card h2 {
+    color: #155724;
+    margin-bottom: 1rem;
+}
+
+.score-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+@media (max-width: 480px) {
+    #app {
+        max-width: 100%;
+        min-height: 100vh;
+    }
+    
+    main {
+        padding: 0.75rem;
+    }
+    
+    .btn {
+        padding: 0.875rem 1rem;
+    }
+}
